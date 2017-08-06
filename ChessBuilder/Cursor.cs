@@ -3,8 +3,7 @@ namespace ChessBuilder
 {
     public class Cursor
     {
-        public Cursor()
-        {
-        }
+        public int X { get; set; }
+        public int Y { get; set; }
     }
 }

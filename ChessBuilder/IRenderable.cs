@@ -1,10 +1,11 @@
 ﻿using System;
 namespace ChessBuilder
 {
-    public class IRenderable
+    public interface IRenderable
     {
-        public IRenderable()
-        {
-        }
+        int X { get; set; }
+        int Y { get; set; }
+        bool Visible { get; set; }
+        char Index { get; set; }
     }
 }
