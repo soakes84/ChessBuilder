@@ -9,6 +9,12 @@ namespace ChessBuilder
         public List<IRenderable> Renderables { get; set; }
         public List<Piece> Pieces { get; set; }
 
+        public Board()
+        {
+            Pieces = new List<Piece>();
+            Renderables = new List<IRenderable>();
+        }
+
         public void Initialize()
         {
 			Pieces = new List<Piece>();
@@ -32,7 +38,7 @@ namespace ChessBuilder
             foreach (var piece in Pieces)
             {
                 Renderables.Add(piece);
-                piece.Visable = true;
+                piece.Visible = true;
                 piece.GetMoves();
             }
         }
