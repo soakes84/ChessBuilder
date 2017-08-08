@@ -32,6 +32,9 @@ namespace ChessBuilder
             var knight = new Knight() { X = 1, Y = 0 };
             Pieces.Add(knight);
 
+            var castle = new Castle { X = 0, Y = 0 };
+            Pieces.Add(castle);
+
             var pawn = new Pawn() { X = 7, Y = 1 };
             Pieces.Add(pawn);
 

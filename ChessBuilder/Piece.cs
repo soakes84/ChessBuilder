@@ -9,7 +9,6 @@ namespace ChessBuilder
         public int Y { get; set; }
         public char Index { get; set; }
         public bool Visible { get; set; }
-        public bool IsMoveAllowed { get; set; }
         public abstract List<Move> GetMoves();
     }
 }

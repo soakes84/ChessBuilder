@@ -22,7 +22,6 @@ namespace ChessBuilder.Pieces
                 moves.Add(new Move { X = X + i, Y = Y - 1 });
                 moves.Add(new Move { X = X + i, Y = Y + i });
                 moves.Add(new Move { X = X - i, Y = Y - i });
-
             }
 
             for (int col = X; col <= X + 7; col++)
